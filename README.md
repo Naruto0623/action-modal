@@ -9,7 +9,7 @@ $ npm install action-modal --save
 ```
 
 ## Useing
-####introduce in the Js
+#### introduce in the Js
 
 ```bash
 import actionModal from 'action-modal';
