@@ -4,21 +4,18 @@
 
 ## Installing
 
-Using npm:
-
 ```bash
 $ npm install action-modal --save
 ```
 
 ## Useing
-
 ####introduce in the Js
 
 ```bash
 import actionModal from 'action-modal';
 ```
 
-####introduce in the Vue
+#### introduce in the Vue
 
 ```bash
 <action-modal 
@@ -31,25 +28,25 @@ import actionModal from 'action-modal';
 </action-modal>
 ```
 
-##Props
+## Props
 
-####mTitle：
+#### mTitle：
 
 模态框标题，默认值为：删除确认，可不传
 
-####mText：
+#### mText：
 
 模态框显示内容文字，默认值为：是否删除此数据，可不传，支持html
 
-####buttonCancel：
+#### buttonCancel：
 
 模态框取消按钮显示文字，默认值为：取消，可不传
 
-####buttonOk：
+#### buttonOk：
 
 模态框确认操作按钮显示文字，默认值为：删除，可不传
 
-####@actionOk：
+#### @actionOk：
 
 点击确认后的回调函数，触发父组件自定义函数
 
