@@ -18,14 +18,24 @@ import actionModal from 'action-modal';
 #### introduce in the Vue
 
 ```bash
-<action-modal 
-    ref="actionModal"
-    :mTitle='删除确认'
-    :mText='是否删除此数据'
-    :buttonCancel='取消'
-    :buttonOk='删除'
-    @actionOk="myActionFn">
-</action-modal>
+<template>
+  <action-modal 
+      ref="actionModal"
+      :mTitle='删除确认'
+      :mText='是否删除此数据'
+      :buttonCancel='取消'
+      :buttonOk='删除'
+      @actionOk="myActionFn">
+  </action-modal>
+</template>
+```
+## Invoking method 
+
+```bash
+//open
+this.$refs.actionModal.openModal();
+//close
+this.$refs.actionModal.openModal(2);
 ```
 
 ## Props
@@ -45,6 +55,8 @@ import actionModal from 'action-modal';
 #### buttonOk：
 
 模态框确认操作按钮显示文字，默认值为：删除，可不传
+
+## Event
 
 #### @actionOk：
 
