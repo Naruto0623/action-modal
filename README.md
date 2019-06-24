@@ -25,7 +25,7 @@ import actionModal from 'action-modal';
       :mText='是否删除此数据'
       :buttonCancel='取消'
       :buttonOk='删除'
-      @actionOk="myActionFn">
+      @deletePost="myActionFn">
   </action-modal>
 </template>
 ```
